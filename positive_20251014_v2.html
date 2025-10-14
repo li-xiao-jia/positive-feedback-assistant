@@ -2302,6 +2302,7 @@ function formatDate(date) {
              console.error("解析保存的数据时出错:", e);
          }
          }
+		 loadCustomSettings();
          updateStats();
          renderAchievements();
          renderSkills();
@@ -3651,118 +3652,114 @@ sortedVisibleCheckins.forEach((checkin, sortedIndex) => {
              }
          }
 
-         function renderValueOutputs() {
-             const list = document.getElementById('value-outputs-list');
-             const fragment = document.createDocumentFragment();
-             
-             if (appData.valueOutputs.length === 0) {
-
-                 return;
-             }
-
-             const outputsByCategory = {};
-             appData.valueOutputs.forEach(output => {
-                 const category = output.category;
-                 if (!outputsByCategory[category]) {
-                     outputsByCategory[category] = [];
-                 }
-                 outputsByCategory[category].push(output);
-             });
-
-             Object.keys(outputsByCategory).forEach(category => {
-                 const outputs = outputsByCategory[category];
-
-                 const isCollapsed = collapseState.value[category] || false;
-                 
-                 const item = document.createElement('div');
-                 item.className = 'value-output-item';
-                 if (isCollapsed) {
-                     item.classList.add('collapsed');
-                 }
-                 
-                 let outputsHTML = '';
-
-const visibleOutputs = outputs
-    .filter(output => isItemVisible(output, output.date))
-    .sort((a, b) => a.timestamp - b.timestamp);
-
-visibleOutputs.forEach((output, index) => {
-
-    const correctIndex = index + 1;
-
-    let modificationHistoryHTML = '';
-    if (output.modificationHistory && output.modificationHistory.length > 0) {
-        const recentModifications = output.modificationHistory.slice(-3);
-        modificationHistoryHTML = `
-            <div class="modification-history">
-                修改历史: ${recentModifications.map(mod => 
-                    `${highlightText(mod.date, searchKeyword)} ${highlightText(mod.time, searchKeyword)}`
-                ).join(', ')}
-            </div>
-        `;
+function renderValueOutputs() {
+    const list = document.getElementById('value-outputs-list');
+    const fragment = document.createDocumentFragment();
+    
+    if (appData.valueOutputs.length === 0) {
+        return;
     }
 
-    const highlightedText = highlightText(output.text, searchKeyword);
-    const highlightedCategory = highlightText(output.category, searchKeyword);
-    const highlightedDate = highlightText(output.date, searchKeyword);
-    const highlightedTime = highlightText(output.time, searchKeyword);
+    const categoryDisplayMap = {
+        '知识分享': customSettings.valueCategories.share || '知识分享',
+        '完成小项目': customSettings.valueCategories.project || '完成小项目',
+        '提供无偿帮助': customSettings.valueCategories.help || '提供无偿帮助',
+        '外部支持与反馈': customSettings.valueCategories.partnership || '外部支持与反馈'
+    };
 
-    outputsHTML = `
-        <div class="value-output-entry">
-            <div class="achievement-entry">
-                <div class="achievement-text">
-                    <span>${correctIndex}. </span>
-                    <div class="value-output-content">
-                        <span class="value-text">${highlightedText}</span>
+    const outputsByCategory = {};
+    appData.valueOutputs.forEach(output => {
+
+        const category = output.category;
+        if (!outputsByCategory[category]) {
+            outputsByCategory[category] = [];
+        }
+        outputsByCategory[category].push(output);
+    });
+
+    Object.keys(outputsByCategory).forEach(category => {
+        const outputs = outputsByCategory[category];
+
+        const isCollapsed = collapseState.value[category] || false;
+        
+        const item = document.createElement('div');
+        item.className = 'value-output-item';
+        if (isCollapsed) {
+            item.classList.add('collapsed');
+        }
+        
+        let outputsHTML = '';
+
+        const visibleOutputs = outputs
+            .filter(output => isItemVisible(output, output.date))
+            .sort((a, b) => a.timestamp - b.timestamp);
+
+        visibleOutputs.forEach((output, index) => {
+            const correctIndex = index + 1;
+
+            let modificationHistoryHTML = '';
+            if (output.modificationHistory && output.modificationHistory.length > 0) {
+                const recentModifications = output.modificationHistory.slice(-3);
+                modificationHistoryHTML = `
+                    <div class="modification-history">
+                        修改历史: ${recentModifications.map(mod => 
+                            `${highlightText(mod.date, searchKeyword)} ${highlightText(mod.time, searchKeyword)}`
+                        ).join(', ')}
+                    </div>
+                `;
+            }
+
+            const highlightedText = highlightText(output.text, searchKeyword);
+            const highlightedDate = highlightText(output.date, searchKeyword);
+            const highlightedTime = highlightText(output.time, searchKeyword);
+
+            outputsHTML = `
+                <div class="value-output-entry">
+                    <div class="achievement-entry">
+                        <div class="achievement-text">
+                            <span>${correctIndex}. </span>
+                            <div class="value-output-content">
+                                <span class="value-text">${highlightedText}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value-output-meta">
+                        <div style="margin-bottom: 8px; font-size: 0.85rem; color: #666;">
+                            <span>${highlightedDate} ${highlightedTime}</span>
+                        </div>
+                        ${modificationHistoryHTML}
+                        <div class="achievement-controls" style="margin-top: 8px;">
+                            <button class="btn-edit" onclick="openEditModal('value', ${output.id})">修改</button>
+                            <button class="btn-danger" onclick="deleteItem('value', ${output.id})">删除</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="value-output-meta">
-                <div style="margin-bottom: 8px; font-size: 0.85rem; color: #666;">
-                    <span>${highlightedDate} ${highlightedTime}</span>
+            ` + outputsHTML;
+        }); 
+
+        if (!outputsHTML) return;
+
+        const categoryDisplayName = categoryDisplayMap[category] || category;
+        const highlightedCategory = highlightText(categoryDisplayName, searchKeyword);
+                        
+        item.innerHTML = `
+            <div class="value-output-header" onclick="toggleCollapse('value', '${category}')">
+                <h3>${highlightedCategory}</h3>
+                <div class="value-output-header-controls">
+                    <span class="collapse-icon">▼</span>
                 </div>
-                ${modificationHistoryHTML}
-                <div class="achievement-controls" style="margin-top: 8px;">
-                    <button class="btn-edit" onclick="openEditModal('value', ${output.id})">修改</button>
-                    <button class="btn-danger" onclick="deleteItem('value', ${output.id})">删除</button>
-                </div>
             </div>
-        </div>
-    ` + outputsHTML;
-}); 
-
-                 if (!outputsHTML) return;
-
-const categoryTypeMap = {
-    '知识分享': 'share',
-    '完成小项目': 'project', 
-    '提供无偿帮助': 'help',
-    '外部支持与反馈': 'partnership'
-};
-
-const categoryType = categoryTypeMap[category] || category;
-
-const categoryDisplayName = customSettings.valueCategories[categoryType] || category;
-const highlightedCategory = highlightText(categoryDisplayName, searchKeyword);
-                 
-                 item.innerHTML = `
-                     <div class="value-output-header" onclick="toggleCollapse('value', '${category}')">
-                         <h3>${highlightedCategory}</h3>
-                         <div class="value-output-header-controls">
-                             <span class="collapse-icon">▼</span>
-                         </div>
-                     </div>
-                     <div class="collapsible-content">
-                         ${outputsHTML}
-                     </div>
-                 `;
-         fragment.appendChild(item);
-         });
-         
-         list.innerHTML = '';
-         list.appendChild(fragment);
-		 updateButtonTexts();
-         }
+            <div class="collapsible-content">
+                ${outputsHTML}
+            </div>
+        `;
+        fragment.appendChild(item);
+    });
+    
+    list.innerHTML = '';
+    list.appendChild(fragment);
+    updateButtonTexts();
+}
 
          function deleteItem(type, id, skillId = null) {
 
