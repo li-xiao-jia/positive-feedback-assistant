@@ -1,0 +1,1743 @@
+{
+  "achievements": [],
+  "skills": [
+    {
+      "id": 1002,
+      "name": "冥想",
+      "progress": 100,
+      "progressType": "days",
+      "category": "completed",
+      "checkins": [
+        {
+          "id": 100299,
+          "content": "第九十九天：尝试在冥想中观察内心的自由，不受限于想法",
+          "date": "2025-10-13",
+          "time": "06:50",
+          "timestamp": 1757740200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100298,
+          "content": "第九十八天：今天专注于感受当下的完美，即使不完美",
+          "date": "2025-10-12",
+          "time": "07:10",
+          "timestamp": 1757653800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100297,
+          "content": "第九十七天：十六周了！冥想让我看到自己内在的力量",
+          "date": "2025-10-11",
+          "time": "06:40",
+          "timestamp": 1757568000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100296,
+          "content": "第九十六天：尝试了观察内心爱的冥想，即使只有一点点",
+          "date": "2025-10-10",
+          "time": "07:20",
+          "timestamp": 1757481600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100295,
+          "content": "第九十五天：今天冥想时感受到一种深度的接纳，对自己和他人",
+          "date": "2025-10-09",
+          "time": "06:55",
+          "timestamp": 1757393700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100294,
+          "content": "第九十四天：尝试在冥想中观察内心的勇气，即使很小",
+          "date": "2025-10-08",
+          "time": "07:15",
+          "timestamp": 1757308500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100293,
+          "content": "第九十三天：今天专注于感受呼吸的生命力，它持续不断",
+          "date": "2025-10-07",
+          "time": "06:45",
+          "timestamp": 1757220300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100292,
+          "content": "第九十二天：十五周了！冥想成为我内在的避风港",
+          "date": "2025-10-06",
+          "time": "07:25",
+          "timestamp": 1757133900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100291,
+          "content": "第九十一天：尝试了观察内心智慧的冥想，相信自己的直觉",
+          "date": "2025-10-05",
+          "time": "06:35",
+          "timestamp": 1757049300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100290,
+          "content": "第九十天：今天冥想时感受到思绪如落叶般轻轻飘落",
+          "date": "2025-10-04",
+          "time": "07:10",
+          "timestamp": 1756961400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100289,
+          "content": "第八十九天：尝试在冥想中观察内心的平静，像深海的宁静",
+          "date": "2025-10-03",
+          "time": "06:50",
+          "timestamp": 1756875000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100288,
+          "content": "第八十八天：今天专注于感受当下的完整性，什么都不缺",
+          "date": "2025-10-02",
+          "time": "07:20",
+          "timestamp": 1756789200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100287,
+          "content": "第八十七天：十四周了！冥想让我更珍惜简单的时刻",
+          "date": "2025-10-01",
+          "time": "06:40",
+          "timestamp": 1756704000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100286,
+          "content": "第八十六天：尝试了观察内心光明的冥想，即使只有一丝微光",
+          "date": "2025-09-30",
+          "time": "07:15",
+          "timestamp": 1756617300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100285,
+          "content": "第八十五天：今天冥想时感受到一种深度的安全感",
+          "date": "2025-09-29",
+          "time": "06:55",
+          "timestamp": 1756530900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100284,
+          "content": "第八十四天：尝试在冥想中感受内心的宽广，能容纳所有体验",
+          "date": "2025-09-28",
+          "time": "07:25",
+          "timestamp": 1756443900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100283,
+          "content": "第八十三天：今天专注于观察呼吸的自然流动，不加以干涉",
+          "date": "2025-09-27",
+          "time": "06:45",
+          "timestamp": 1756358700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100282,
+          "content": "第八十二天：十三周了！冥想后的工作效率明显提高",
+          "date": "2025-09-26",
+          "time": "07:10",
+          "timestamp": 1756271400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100281,
+          "content": "第八十一天：尝试了观察内心空间的冥想，念头在其中来来去去",
+          "date": "2025-09-25",
+          "time": "06:35",
+          "timestamp": 1756185300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100280,
+          "content": "第八十天：今天专注于感受身体的智慧，它知道如何放松",
+          "date": "2025-09-24",
+          "time": "07:20",
+          "timestamp": 1756099200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100279,
+          "content": "第七十九天：尝试在冥想中观察内心的宁静，即使外界嘈杂",
+          "date": "2025-09-23",
+          "time": "06:50",
+          "timestamp": 1756013400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100278,
+          "content": "第七十八天：三个月了！冥想成为我清晨最期待的时刻",
+          "date": "2025-09-22",
+          "time": "07:15",
+          "timestamp": 1755926100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100277,
+          "content": "第七十七天：今天冥想时感受到思绪如微风般轻柔",
+          "date": "2025-09-21",
+          "time": "06:40",
+          "timestamp": 1755840000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100276,
+          "content": "第七十六天：尝试了观察内心故事的冥想，而不相信它们",
+          "date": "2025-09-20",
+          "time": "07:25",
+          "timestamp": 1755753900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100275,
+          "content": "第七十五天：今天专注于感受呼吸的温暖和凉爽",
+          "date": "2025-09-19",
+          "time": "06:55",
+          "timestamp": 1755668100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100274,
+          "content": "第七十四天：尝试在冥想中观察思维的自动化模式",
+          "date": "2025-09-18",
+          "time": "07:10",
+          "timestamp": 1755580200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100273,
+          "content": "第七十三天：十一周了！冥想让我更善于倾听他人",
+          "date": "2025-09-17",
+          "time": "06:45",
+          "timestamp": 1755494700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100272,
+          "content": "第七十二天：今天冥想时感受到一种深度的满足感",
+          "date": "2025-09-16",
+          "time": "07:20",
+          "timestamp": 1755408000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100271,
+          "content": "第七十一天：尝试了观察内心抵抗的冥想，接受当下的样子",
+          "date": "2025-09-15",
+          "time": "06:35",
+          "timestamp": 1755321300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100270,
+          "content": "第七十天：今天专注于感受当下的丰富性，不渴望更多",
+          "date": "2025-09-14",
+          "time": "07:15",
+          "timestamp": 1755234900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100269,
+          "content": "第六十九天：尝试在冥想中观察身体的能量流动",
+          "date": "2025-09-13",
+          "time": "06:50",
+          "timestamp": 1755149400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100268,
+          "content": "第六十八天：十周了！冥想帮助我减少了对未来的焦虑",
+          "date": "2025-09-12",
+          "time": "07:25",
+          "timestamp": 1755062700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100267,
+          "content": "第六十七天：今天冥想时感受到与周围环境的一体感",
+          "date": "2025-09-11",
+          "time": "06:40",
+          "timestamp": 1754977200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100266,
+          "content": "第六十六天：尝试了观察内心批判声音的冥想，而不认同它",
+          "date": "2025-09-10",
+          "time": "07:10",
+          "timestamp": 1754890200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100265,
+          "content": "第六十五天：今天专注于呼吸的节奏，像海浪一样自然",
+          "date": "2025-09-09",
+          "time": "06:55",
+          "timestamp": 1754804100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100264,
+          "content": "第六十四天：尝试在冥想中观察感官体验的纯粹性",
+          "date": "2025-09-08",
+          "time": "07:20",
+          "timestamp": 1754716800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100263,
+          "content": "第六十三天：九周了！冥想后的决策更加清晰和冷静",
+          "date": "2025-09-07",
+          "time": "06:45",
+          "timestamp": 1754630700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100262,
+          "content": "第六十二天：今天冥想时感受到内心的空间变大了",
+          "date": "2025-09-06",
+          "time": "07:15",
+          "timestamp": 1754543700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100261,
+          "content": "第六十一天：尝试了感恩身体每个部位的冥想",
+          "date": "2025-09-05",
+          "time": "06:35",
+          "timestamp": 1754458500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100260,
+          "content": "第六十天：今天专注于观察念头的空隙，思绪之间的宁静",
+          "date": "2025-09-04",
+          "time": "07:25",
+          "timestamp": 1754371500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100259,
+          "content": "第五十九天：两个月了！冥想让我更接纳不完美的自己",
+          "date": "2025-09-03",
+          "time": "06:50",
+          "timestamp": 1754285400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100258,
+          "content": "第五十八天：尝试在冥想中感受生命的无常，一切都在变化",
+          "date": "2025-09-02",
+          "time": "07:10",
+          "timestamp": 1754197800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100257,
+          "content": "第五十七天：今天冥想时感受到一种深度的放松，几乎要睡着了",
+          "date": "2025-09-01",
+          "time": "06:40",
+          "timestamp": 1754112000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100256,
+          "content": "第五十六天：尝试了观察内心对话的冥想，而不参与其中",
+          "date": "2025-08-31",
+          "time": "07:20",
+          "timestamp": 1754025600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100255,
+          "content": "第五十五天：今天专注于感受整个身体的呼吸，不只是肺部",
+          "date": "2025-08-30",
+          "time": "06:55",
+          "timestamp": 1753937700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100254,
+          "content": "第五十四天：八周了！冥想帮助我更好地处理压力情境",
+          "date": "2025-08-29",
+          "time": "07:15",
+          "timestamp": 1753851300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100253,
+          "content": "第五十三天：尝试在冥想中观察身体的微小不适而不反应",
+          "date": "2025-08-28",
+          "time": "06:45",
+          "timestamp": 1753764300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100252,
+          "content": "第五十二天：今天冥想时感受到时间的相对性，20分钟感觉像5分钟",
+          "date": "2025-08-27",
+          "time": "07:25",
+          "timestamp": 1753679100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100251,
+          "content": "第五十一天：尝试了慈心冥想，向所有众生发送善意",
+          "date": "2025-08-26",
+          "time": "06:35",
+          "timestamp": 1753590900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100250,
+          "content": "第五十天：专注于呼吸的深度，不控制它，只是观察",
+          "date": "2025-08-25",
+          "time": "07:10",
+          "timestamp": 1753504200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100249,
+          "content": "第四十九天：今天尝试在冥想中观察情绪的生理反应",
+          "date": "2025-08-24",
+          "time": "06:50",
+          "timestamp": 1753417800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100248,
+          "content": "第四十八天：七周了！冥想后的平静能持续整个上午",
+          "date": "2025-08-23",
+          "time": "07:20",
+          "timestamp": 1753330800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100247,
+          "content": "第四十七天：尝试了专注於身体与椅子接触点的冥想",
+          "date": "2025-08-22",
+          "time": "06:40",
+          "timestamp": 1753244400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100246,
+          "content": "第四十六天：今天冥想时感受到了与更大事物的连接感",
+          "date": "2025-08-21",
+          "time": "07:15",
+          "timestamp": 1753157700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100245,
+          "content": "第四十五天：尝试在冥想中感受空气在皮肤上的流动",
+          "date": "2025-08-20",
+          "time": "06:55",
+          "timestamp": 1753070100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100244,
+          "content": "第四十四天：今天专注于眼皮后面的黑暗和偶尔的光点",
+          "date": "2025-08-19",
+          "time": "07:25",
+          "timestamp": 1752984300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100243,
+          "content": "第四十三天：尝试了观察念头如河流般流过的冥想",
+          "date": "2025-08-18",
+          "time": "06:45",
+          "timestamp": 1752896700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100242,
+          "content": "第四十二天：六周了！冥想让我对负面情绪的反应变慢了",
+          "date": "2025-08-17",
+          "time": "07:10",
+          "timestamp": 1752810600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100241,
+          "content": "第四十一天：今天专注于舌头的感受，它自然地待在口腔中",
+          "date": "2025-08-16",
+          "time": "06:35",
+          "timestamp": 1752723300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100240,
+          "content": "第四十天：尝试在冥想中感受身体的重量，与地球的连接",
+          "date": "2025-08-15",
+          "time": "07:20",
+          "timestamp": 1752636000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100239,
+          "content": "第三十九天：今天冥想时没有设定时间，自然而然地坐了18分钟",
+          "date": "2025-08-14",
+          "time": "06:50",
+          "timestamp": 1752549600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100238,
+          "content": "第三十八天：尝试了微笑冥想，即使心里不想笑，肌肉记忆也有帮助",
+          "date": "2025-08-13",
+          "time": "07:15",
+          "timestamp": 1752462900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100237,
+          "content": "第三十七天：今天专注于鼻腔呼吸的感觉，空气的进出",
+          "date": "2025-08-12",
+          "time": "06:40",
+          "timestamp": 1752376800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100236,
+          "content": "第三十六天：尝试在冥想中观察思绪如何一个接一个地出现",
+          "date": "2025-08-11",
+          "time": "07:25",
+          "timestamp": 1752290700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100235,
+          "content": "第三十五天：五周了！冥想后感觉头脑清晰，做事更专注",
+          "date": "2025-08-10",
+          "time": "06:55",
+          "timestamp": 1752204900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100234,
+          "content": "第三十四天：今天专注于感受心跳，生命的节奏很神奇",
+          "date": "2025-08-09",
+          "time": "07:10",
+          "timestamp": 1752118200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100233,
+          "content": "第三十三天：尝试了 mantra 冥想，重复一个平静的词如'平安'",
+          "date": "2025-08-08",
+          "time": "06:45",
+          "timestamp": 1752031500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100232,
+          "content": "第三十二天：今天冥想时感受到内心的平静像湖面一样",
+          "date": "2025-08-07",
+          "time": "07:20",
+          "timestamp": 1751944800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100231,
+          "content": "第三十一天：尝试在冥想中观察身体的微小动作，如眨眼或吞咽",
+          "date": "2025-08-06",
+          "time": "06:35",
+          "timestamp": 1751856900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100230,
+          "content": "第三十天：今天专注于呼吸的间隙，吸气和呼气之间的短暂停顿",
+          "date": "2025-08-05",
+          "time": "07:15",
+          "timestamp": 1751770500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100229,
+          "content": "第二十九天：尝试了观想冥想，想象自己在一片宁静的森林中",
+          "date": "2025-08-04",
+          "time": "06:50",
+          "timestamp": 1751683800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100228,
+          "content": "第二十八天：一个月了！冥想已经成为日常生活的一部分",
+          "date": "2025-08-03",
+          "time": "07:00",
+          "timestamp": 1751598000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100227,
+          "content": "第二十七天：今天冥想了15分钟，创下了新纪录！",
+          "date": "2025-08-02",
+          "time": "07:25",
+          "timestamp": 1751511900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100226,
+          "content": "第二十六天：尝试在冥想中发送善意给曾经伤害过我的人，这很难但值得尝试",
+          "date": "2025-08-01",
+          "time": "06:45",
+          "timestamp": 1751424300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100225,
+          "content": "第二十五天：今天冥想时想起了不愉快的事，但学会了不陷入其中",
+          "date": "2025-07-31",
+          "time": "07:10",
+          "timestamp": 1751338200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100224,
+          "content": "第二十四天：尝试了声音冥想，专注于某种持续的声音如风扇声",
+          "date": "2025-07-30",
+          "time": "06:55",
+          "timestamp": 1751250900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100223,
+          "content": "第二十三天：今天专注于身体的感受，从头顶到脚趾的细微感觉",
+          "date": "2025-07-29",
+          "time": "07:20",
+          "timestamp": 1751164800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100222,
+          "content": "第二十二天：尝试在冥想中观察念头的产生和消失，不加以评判",
+          "date": "2025-07-28",
+          "time": "06:40",
+          "timestamp": 1751077200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100221,
+          "content": "第二十一天：三周了！今天冥想时没有看一次时间，完全沉浸在当下",
+          "date": "2025-07-27",
+          "time": "07:00",
+          "timestamp": 1750990800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100220,
+          "content": "第二十天：尝试了感恩冥想，回想三件值得感恩的小事",
+          "date": "2025-07-26",
+          "time": "07:15",
+          "timestamp": 1750904100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100219,
+          "content": "第十九天：今天冥想了12分钟，时间过得比想象中快",
+          "date": "2025-07-25",
+          "time": "06:35",
+          "timestamp": 1750817700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100218,
+          "content": "第十八天：尝试在冥想中观察情绪而不被卷入，像看天空中的云",
+          "date": "2025-07-24",
+          "time": "07:25",
+          "timestamp": 1750731900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100217,
+          "content": "第十七天：专注于呼吸的凉爽入和温暖出，这种细微的感觉很有趣",
+          "date": "2025-07-23",
+          "time": "06:50",
+          "timestamp": 1750644600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100216,
+          "content": "第十六天：今天冥想时腿麻了，但学会了平静地调整姿势而不中断",
+          "date": "2025-07-22",
+          "time": "07:10",
+          "timestamp": 1750558200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100215,
+          "content": "第十五天：尝试计数呼吸，数到10后重新开始，帮助保持专注",
+          "date": "2025-07-21",
+          "time": "06:45",
+          "timestamp": 1750471500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100214,
+          "content": "第十四天：两周纪念！今天冥想时感受到了一丝内心的宁静",
+          "date": "2025-07-20",
+          "time": "07:20",
+          "timestamp": 1750384800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100213,
+          "content": "第十三天：今天尝试了行走冥想，专注于脚底与地面的接触",
+          "date": "2025-07-19",
+          "time": "06:30",
+          "timestamp": 1750297800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100212,
+          "content": "第十二天：注意到冥想后的一小时内，对小事不那么容易烦躁了",
+          "date": "2025-07-18",
+          "time": "07:15",
+          "timestamp": 1750211700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100211,
+          "content": "第十一天：今天专注于聆听周围的声音，而不是试图屏蔽它们",
+          "date": "2025-07-17",
+          "time": "06:55",
+          "timestamp": 1750125300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100210,
+          "content": "第十天：尝试在冥想中微笑，即使只是嘴角微微上扬，心情也变好了",
+          "date": "2025-07-16",
+          "time": "07:05",
+          "timestamp": 1750038300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100209,
+          "content": "第九天：今天思绪特别多，但没有批评自己，只是观察它们像云一样飘过",
+          "date": "2025-07-15",
+          "time": "06:40",
+          "timestamp": 1749951600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100300,
+          "content": "第一百天：百日冥想完成！从3分钟到30分钟，从思绪纷飞到内心宁静，我见证了自己的成长和变化。冥想不仅是一种练习，更是一种生活方式。感谢坚持下来的自己！",
+          "date": "2025-10-14",
+          "time": "07:30",
+          "timestamp": 1749888600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100208,
+          "content": "第八天：尝试了慈心冥想，向自己发送善意：'愿我平安，愿我快乐'",
+          "date": "2025-07-14",
+          "time": "07:10",
+          "timestamp": 1749865200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100207,
+          "content": "第七天：一周了！今天能够安静地坐8分钟而没有频繁看时间",
+          "date": "2025-07-13",
+          "time": "06:50",
+          "timestamp": 1749778200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100206,
+          "content": "第六天：今天冥想时外面有噪音，但尝试接受它而不是抗拒，心态平和了一些",
+          "date": "2025-07-12",
+          "time": "07:20",
+          "timestamp": 1749691200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100205,
+          "content": "第五天：尝试了身体扫描冥想，从脚趾开始慢慢向上，感觉很放松",
+          "date": "2025-07-11",
+          "time": "06:30",
+          "timestamp": 1749604200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100204,
+          "content": "第四天：今天专注于腹部的起伏，感觉比关注呼吸更容易集中",
+          "date": "2025-07-10",
+          "time": "07:15",
+          "timestamp": 1749518100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100203,
+          "content": "第三天：思绪还是很乱，但学会了当注意力分散时温柔地把它带回来",
+          "date": "2025-07-09",
+          "time": "06:45",
+          "timestamp": 1749431100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100202,
+          "content": "第二天：今天尝试了5分钟，注意到呼吸时胸口起伏的感觉",
+          "date": "2025-07-08",
+          "time": "07:00",
+          "timestamp": 1749344400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100201,
+          "content": "第一天冥想：只坚持了3分钟，思绪不断飘散，但至少开始了",
+          "date": "2025-07-07",
+          "time": "06:30",
+          "timestamp": 1749258600000,
+          "modificationHistory": []
+        }
+      ]
+    },
+    {
+      "id": 1001,
+      "name": "画画",
+      "progress": 100,
+      "progressType": "count",
+      "category": "completed",
+      "checkins": [
+        {
+          "id": 100146,
+          "content": "画了想象中的海底世界，蓝色渐变很美丽",
+          "date": "2025-10-14",
+          "time": "21:50",
+          "timestamp": 1749930600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100158,
+          "content": "画了记忆中的烟花，绽放的瞬间很美",
+          "date": "2025-10-14",
+          "time": "20:15",
+          "timestamp": 1749924900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100194,
+          "content": "画了记忆中的星云，宇宙浩瀚无垠",
+          "date": "2025-10-14",
+          "time": "19:05",
+          "timestamp": 1749924300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100182,
+          "content": "画了记忆中的热气球，五彩斑斓升空",
+          "date": "2025-10-14",
+          "time": "17:40",
+          "timestamp": 1749919200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100145,
+          "content": "尝试画镜面反射，倒影效果令人惊喜",
+          "date": "2025-10-14",
+          "time": "18:10",
+          "timestamp": 1749917400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100170,
+          "content": "画了记忆中的极光，梦幻色彩很美",
+          "date": "2025-10-14",
+          "time": "16:05",
+          "timestamp": 1749912300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100144,
+          "content": "画了今天的穿搭，服装褶皱表现得更自然",
+          "date": "2025-10-14",
+          "time": "14:20",
+          "timestamp": 1749903600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100143,
+          "content": "练习画复杂机械，细节部分很考验观察力",
+          "date": "2025-10-14",
+          "time": "09:00",
+          "timestamp": 1749884400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100193,
+          "content": "尝试画能量场，发光效果很神秘",
+          "date": "2025-10-13",
+          "time": "23:45",
+          "timestamp": 1749858300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100181,
+          "content": "尝试画晨雾，朦胧美需要轻柔手法",
+          "date": "2025-10-13",
+          "time": "23:00",
+          "timestamp": 1749855600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100169,
+          "content": "尝试画蒸汽，朦胧效果需要轻柔笔触",
+          "date": "2025-10-13",
+          "time": "21:25",
+          "timestamp": 1749852300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100142,
+          "content": "画了记忆中的雪景，白色需要留白技巧",
+          "date": "2025-10-13",
+          "time": "20:30",
+          "timestamp": 1749846600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100157,
+          "content": "尝试画水中倒影，上下对称需要技巧",
+          "date": "2025-10-13",
+          "time": "17:20",
+          "timestamp": 1749835200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100141,
+          "content": "尝试画运动中的物体，动态线条有进步",
+          "date": "2025-10-13",
+          "time": "16:45",
+          "timestamp": 1749833100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100140,
+          "content": "画了早餐的麦片碗，圆形物体画得更圆了",
+          "date": "2025-10-13",
+          "time": "12:00",
+          "timestamp": 1749816000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100139,
+          "content": "练习画布料图案，重复的纹样需要耐心",
+          "date": "2025-10-13",
+          "time": "08:20",
+          "timestamp": 1749795600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100192,
+          "content": "画了石头小路，不规则但自然",
+          "date": "2025-10-12",
+          "time": "22:25",
+          "timestamp": 1749752700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100138,
+          "content": "画了想象中的城堡，童话感十足",
+          "date": "2025-10-12",
+          "time": "21:40",
+          "timestamp": 1749750000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100180,
+          "content": "画了竹编篮子，交错纹理很有趣",
+          "date": "2025-10-12",
+          "time": "21:15",
+          "timestamp": 1749748500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100168,
+          "content": "画了窗帘，布料垂感尝试表现",
+          "date": "2025-10-12",
+          "time": "19:35",
+          "timestamp": 1749742500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100137,
+          "content": "尝试画透明材质，折射效果很有趣",
+          "date": "2025-10-12",
+          "time": "19:15",
+          "timestamp": 1749741300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100136,
+          "content": "画了今天的夕阳，暖色调让人温暖",
+          "date": "2025-10-12",
+          "time": "17:00",
+          "timestamp": 1749733200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100156,
+          "content": "画了书页，纸张的轻薄感尝试表达",
+          "date": "2025-10-12",
+          "time": "14:50",
+          "timestamp": 1749725400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100135,
+          "content": "练习画羽毛，轻盈的质感需要轻柔的笔触",
+          "date": "2025-10-12",
+          "time": "10:30",
+          "timestamp": 1749712200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100191,
+          "content": "练习画电路板，精细线路需要专注",
+          "date": "2025-10-11",
+          "time": "19:55",
+          "timestamp": 1749671700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100134,
+          "content": "画了记忆中的花园，五彩缤纷的颜色",
+          "date": "2025-10-11",
+          "time": "20:45",
+          "timestamp": 1749667500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100179,
+          "content": "练习画渔网，网状结构需要规律",
+          "date": "2025-10-11",
+          "time": "18:20",
+          "timestamp": 1749666000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100133,
+          "content": "尝试画火焰，动态的形状很有挑战",
+          "date": "2025-10-11",
+          "time": "17:30",
+          "timestamp": 1749655800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100167,
+          "content": "练习画瓷器，光滑表面需要均匀着色",
+          "date": "2025-10-11",
+          "time": "15:40",
+          "timestamp": 1749651600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100132,
+          "content": "画了书架上的书，透视关系比之前准确",
+          "date": "2025-10-11",
+          "time": "13:20",
+          "timestamp": 1749640800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100155,
+          "content": "练习画玻璃珠，透明感和反光同时表现",
+          "date": "2025-10-11",
+          "time": "10:10",
+          "timestamp": 1749629400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100131,
+          "content": "练习画水波纹，流动的感觉很难捕捉",
+          "date": "2025-10-11",
+          "time": "09:45",
+          "timestamp": 1749627900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100130,
+          "content": "画了想象中的飞船，创意比技巧更重要",
+          "date": "2025-10-10",
+          "time": "22:10",
+          "timestamp": 1749586200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100129,
+          "content": "尝试画金属质感，反光部分需要仔细观察",
+          "date": "2025-10-10",
+          "time": "18:40",
+          "timestamp": 1749570000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100154,
+          "content": "画了记忆中的麦田，金黄色调很温暖",
+          "date": "2025-10-10",
+          "time": "16:30",
+          "timestamp": 1749565800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100190,
+          "content": "画了记忆中的珊瑚礁，海底世界多彩",
+          "date": "2025-10-10",
+          "time": "16:15",
+          "timestamp": 1749564900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100178,
+          "content": "画了记忆中的冰川，冷色调很纯净",
+          "date": "2025-10-10",
+          "time": "14:50",
+          "timestamp": 1749559800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100128,
+          "content": "画了雨中的街道，湿润的感觉尝试表现",
+          "date": "2025-10-10",
+          "time": "14:15",
+          "timestamp": 1749554100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100166,
+          "content": "画了记忆中的沙漠，广袤无垠的感觉",
+          "date": "2025-10-10",
+          "time": "12:30",
+          "timestamp": 1749544200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100127,
+          "content": "练习画人物表情，微笑的弧度很难把握",
+          "date": "2025-10-10",
+          "time": "08:30",
+          "timestamp": 1749533400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100189,
+          "content": "尝试画全息效果，多彩反光很科幻",
+          "date": "2025-10-09",
+          "time": "23:50",
+          "timestamp": 1749498600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100177,
+          "content": "尝试画熔岩，炽热感需要暖色调",
+          "date": "2025-10-09",
+          "time": "22:30",
+          "timestamp": 1749493800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100126,
+          "content": "画了夜空中的星星，点点星光很治愈",
+          "date": "2025-10-09",
+          "time": "21:30",
+          "timestamp": 1749490200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100165,
+          "content": "尝试画水晶，棱角分明且透明",
+          "date": "2025-10-09",
+          "time": "20:20",
+          "timestamp": 1749486000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100153,
+          "content": "尝试画飞舞的蝴蝶，对称翅膀需要平衡",
+          "date": "2025-10-09",
+          "time": "18:00",
+          "timestamp": 1749477600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100125,
+          "content": "尝试画建筑透视，虽然复杂但很有趣",
+          "date": "2025-10-09",
+          "time": "16:20",
+          "timestamp": 1749471600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100124,
+          "content": "画了今天的午餐，色彩搭配有进步",
+          "date": "2025-10-09",
+          "time": "12:45",
+          "timestamp": 1749458700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100123,
+          "content": "练习画动物毛发，短线条的排列需要技巧",
+          "date": "2025-10-09",
+          "time": "09:15",
+          "timestamp": 1749442500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100200,
+          "content": "画了记忆中的彩虹尽头，梦想的地方",
+          "date": "2025-10-08",
+          "time": "23:20",
+          "timestamp": 1749400800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100122,
+          "content": "画了记忆中的海边，蓝色调让人平静",
+          "date": "2025-10-08",
+          "time": "22:00",
+          "timestamp": 1749398400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100188,
+          "content": "画了木纹桌子，年轮纹理很自然",
+          "date": "2025-10-08",
+          "time": "22:40",
+          "timestamp": 1749398400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100176,
+          "content": "画了陶瓷碗，圆形和深度都要表现",
+          "date": "2025-10-08",
+          "time": "20:55",
+          "timestamp": 1749394500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100121,
+          "content": "尝试画透明玻璃杯，反光效果勉强表现出来",
+          "date": "2025-10-08",
+          "time": "19:45",
+          "timestamp": 1749390300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100164,
+          "content": "画了毛衣，针织纹理需要细致表现",
+          "date": "2025-10-08",
+          "time": "18:25",
+          "timestamp": 1749385500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100120,
+          "content": "画了窗台上的多肉植物，小细节很考验耐心",
+          "date": "2025-10-08",
+          "time": "15:30",
+          "timestamp": 1749375000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100152,
+          "content": "画了咖啡杯，椭圆形状画得更准确",
+          "date": "2025-10-08",
+          "time": "13:40",
+          "timestamp": 1749368400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100119,
+          "content": "练习画布料褶皱，观察了很久才开始动笔",
+          "date": "2025-10-08",
+          "time": "10:00",
+          "timestamp": 1749355200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100118,
+          "content": "画了想象中的森林，绿色用得很大胆",
+          "date": "2025-10-07",
+          "time": "21:10",
+          "timestamp": 1749316200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100199,
+          "content": "练习画丝绸，光滑质感需要细腻笔触",
+          "date": "2025-10-07",
+          "time": "19:45",
+          "timestamp": 1749313500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100187,
+          "content": "练习画皮革，质感需要适当阴影",
+          "date": "2025-10-07",
+          "time": "18:10",
+          "timestamp": 1749307800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100117,
+          "content": "尝试画动态的人物，虽然僵硬但有进步",
+          "date": "2025-10-07",
+          "time": "17:45",
+          "timestamp": 1749303900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100175,
+          "content": "练习画羽毛笔，古典感需要细腻线条",
+          "date": "2025-10-07",
+          "time": "16:25",
+          "timestamp": 1749301500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100163,
+          "content": "练习画动物眼睛，神韵很难捕捉",
+          "date": "2025-10-07",
+          "time": "14:40",
+          "timestamp": 1749292800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100116,
+          "content": "画了书桌上的台灯，光影效果尝试表现",
+          "date": "2025-10-07",
+          "time": "13:30",
+          "timestamp": 1749288600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100151,
+          "content": "练习画石头纹理，粗糙质感需要不同笔法",
+          "date": "2025-10-07",
+          "time": "11:15",
+          "timestamp": 1749280500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100115,
+          "content": "练习画眼睛，左右对称比想象中难，但坚持练习",
+          "date": "2025-10-07",
+          "time": "08:15",
+          "timestamp": 1749269700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100198,
+          "content": "画了记忆中的古堡，历史感很浓厚",
+          "date": "2025-10-06",
+          "time": "23:55",
+          "timestamp": 1749239700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100186,
+          "content": "画了记忆中的瀑布，水流奔腾很壮观",
+          "date": "2025-10-06",
+          "time": "23:30",
+          "timestamp": 1749238200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100174,
+          "content": "画了记忆中的彩虹桥，弧形很优美",
+          "date": "2025-10-06",
+          "time": "22:05",
+          "timestamp": 1749233100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100114,
+          "content": "画了今天的云朵，软绵绵的感觉表达出来了一点",
+          "date": "2025-10-06",
+          "time": "20:45",
+          "timestamp": 1749228300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100162,
+          "content": "画了记忆中的月亮，阴晴圆缺的变化",
+          "date": "2025-10-06",
+          "time": "19:55",
+          "timestamp": 1749225300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100113,
+          "content": "尝试用水彩，颜色混在一起但意外地好看",
+          "date": "2025-10-06",
+          "time": "18:20",
+          "timestamp": 1749219600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100150,
+          "content": "画了记忆中的彩虹，七种颜色依次排列",
+          "date": "2025-10-06",
+          "time": "15:45",
+          "timestamp": 1749206700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100112,
+          "content": "画了记忆中的老家房子，细节记不清但轮廓大致对",
+          "date": "2025-10-06",
+          "time": "14:00",
+          "timestamp": 1749200400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100111,
+          "content": "练习画手的形状，这是第五次尝试，比第一次好多了",
+          "date": "2025-10-06",
+          "time": "09:30",
+          "timestamp": 1749183000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100197,
+          "content": "尝试画魔法阵，几何图案需要精确",
+          "date": "2025-10-05",
+          "time": "22:15",
+          "timestamp": 1749142500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100185,
+          "content": "尝试画爆炸效果，碎片四散很动态",
+          "date": "2025-10-05",
+          "time": "20:45",
+          "timestamp": 1749139500000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100110,
+          "content": "画了自画像，虽然不像但记录下了此刻的自己",
+          "date": "2025-10-05",
+          "time": "21:30",
+          "timestamp": 1749137400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100149,
+          "content": "尝试画烟雾，朦胧的效果需要轻柔笔触",
+          "date": "2025-10-05",
+          "time": "19:20",
+          "timestamp": 1749133200000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100173,
+          "content": "尝试画闪电，瞬间的明亮很难把握",
+          "date": "2025-10-05",
+          "time": "17:50",
+          "timestamp": 1749127800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100109,
+          "content": "尝试画阴影，虽然深浅掌握不好但迈出了新的一步",
+          "date": "2025-10-05",
+          "time": "16:45",
+          "timestamp": 1749117900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100161,
+          "content": "尝试画流动的水，动态效果很有挑战",
+          "date": "2025-10-05",
+          "time": "15:10",
+          "timestamp": 1749114600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100108,
+          "content": "画了一只简单的小猫，朋友说能看出是猫，很有成就感",
+          "date": "2025-10-05",
+          "time": "10:15",
+          "timestamp": 1749096900000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100107,
+          "content": "练习画立方体，虽然透视不对，但坚持画完了",
+          "date": "2025-10-04",
+          "time": "21:00",
+          "timestamp": 1749056400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100106,
+          "content": "画了窗外的树，这次没有因为画得不像而撕掉画纸",
+          "date": "2025-10-04",
+          "time": "19:30",
+          "timestamp": 1749051000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100196,
+          "content": "画了玻璃瓶，透明感和标签都要画",
+          "date": "2025-10-04",
+          "time": "17:30",
+          "timestamp": 1749048600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100184,
+          "content": "画了厨房用具，金属和塑料质感不同",
+          "date": "2025-10-04",
+          "time": "15:05",
+          "timestamp": 1749042300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100148,
+          "content": "画了盆栽的叶子，叶脉细节仔细观察",
+          "date": "2025-10-04",
+          "time": "16:50",
+          "timestamp": 1749041400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100105,
+          "content": "尝试用不同颜色的笔画画，发现蓝色让我心情平静",
+          "date": "2025-10-04",
+          "time": "15:20",
+          "timestamp": 1749036000000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100172,
+          "content": "画了花园里的花，不同花朵各有特色",
+          "date": "2025-10-04",
+          "time": "13:15",
+          "timestamp": 1749035700000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100160,
+          "content": "画了水果篮，不同水果形状各异",
+          "date": "2025-10-04",
+          "time": "11:45",
+          "timestamp": 1749023100000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100104,
+          "content": "画了今天的早餐：一个煎蛋和面包，虽然很抽象但能看出是什么",
+          "date": "2025-10-04",
+          "time": "08:45",
+          "timestamp": 1749012300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100195,
+          "content": "练习画藤蔓植物，缠绕生长很自然",
+          "date": "2025-10-03",
+          "time": "23:10",
+          "timestamp": 1748981400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100183,
+          "content": "练习画蜘蛛网，精细结构很考验耐心",
+          "date": "2025-10-03",
+          "time": "22:20",
+          "timestamp": 1748979600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100171,
+          "content": "练习画金属链条，环环相扣需要准确",
+          "date": "2025-10-03",
+          "time": "20:40",
+          "timestamp": 1748972400000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100103,
+          "content": "临摹了一片简单的叶子形状，轮廓大致相似，有点开心",
+          "date": "2025-10-03",
+          "time": "20:15",
+          "timestamp": 1748967300000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100159,
+          "content": "练习画树皮，粗糙纹理需要耐心刻画",
+          "date": "2025-10-03",
+          "time": "17:30",
+          "timestamp": 1748964600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100102,
+          "content": "尝试画直线，手抖得厉害，但画了10条后稍微稳定了一点",
+          "date": "2025-10-03",
+          "time": "14:30",
+          "timestamp": 1748946600000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100147,
+          "content": "练习画头发丝，细线需要稳定的手腕",
+          "date": "2025-10-03",
+          "time": "11:30",
+          "timestamp": 1748935800000,
+          "modificationHistory": []
+        },
+        {
+          "id": 100101,
+          "content": "今天画了一个歪歪扭扭的圆圈，虽然不完美，但这是我第一次主动拿起画笔",
+          "date": "2025-10-03",
+          "time": "09:00",
+          "timestamp": 1748926800000,
+          "modificationHistory": []
+        }
+      ]
+    }
+  ],
+  "reflections": [],
+  "valueOutputs": [],
+  "recordData": {
+    "recordDays": 100,
+    "recordDates": [
+      "2025-10-14",
+      "2025-10-13",
+      "2025-10-12",
+      "2025-10-11",
+      "2025-10-10",
+      "2025-10-09",
+      "2025-10-08",
+      "2025-10-07",
+      "2025-10-06",
+      "2025-10-05",
+      "2025-10-04",
+      "2025-10-03",
+      "2025-10-02",
+      "2025-10-01",
+      "2025-09-30",
+      "2025-09-29",
+      "2025-09-28",
+      "2025-09-27",
+      "2025-09-26",
+      "2025-09-25",
+      "2025-09-24",
+      "2025-09-23",
+      "2025-09-22",
+      "2025-09-21",
+      "2025-09-20",
+      "2025-09-19",
+      "2025-09-18",
+      "2025-09-17",
+      "2025-09-16",
+      "2025-09-15",
+      "2025-09-14",
+      "2025-09-13",
+      "2025-09-12",
+      "2025-09-11",
+      "2025-09-10",
+      "2025-09-09",
+      "2025-09-08",
+      "2025-09-07",
+      "2025-09-06",
+      "2025-09-05",
+      "2025-09-04",
+      "2025-09-03",
+      "2025-09-02",
+      "2025-09-01",
+      "2025-08-31",
+      "2025-08-30",
+      "2025-08-29",
+      "2025-08-28",
+      "2025-08-27",
+      "2025-08-26",
+      "2025-08-25",
+      "2025-08-24",
+      "2025-08-23",
+      "2025-08-22",
+      "2025-08-21",
+      "2025-08-20",
+      "2025-08-19",
+      "2025-08-18",
+      "2025-08-17",
+      "2025-08-16",
+      "2025-08-15",
+      "2025-08-14",
+      "2025-08-13",
+      "2025-08-12",
+      "2025-08-11",
+      "2025-08-10",
+      "2025-08-09",
+      "2025-08-08",
+      "2025-08-07",
+      "2025-08-06",
+      "2025-08-05",
+      "2025-08-04",
+      "2025-08-03",
+      "2025-08-02",
+      "2025-08-01",
+      "2025-07-31",
+      "2025-07-30",
+      "2025-07-29",
+      "2025-07-28",
+      "2025-07-27",
+      "2025-07-26",
+      "2025-07-25",
+      "2025-07-24",
+      "2025-07-23",
+      "2025-07-22",
+      "2025-07-21",
+      "2025-07-20",
+      "2025-07-19",
+      "2025-07-18",
+      "2025-07-17",
+      "2025-07-16",
+      "2025-07-15",
+      "2025-07-14",
+      "2025-07-13",
+      "2025-07-12",
+      "2025-07-11",
+      "2025-07-10",
+      "2025-07-09",
+      "2025-07-08",
+      "2025-07-07"
+    ]
+  },
+  "exportInfo": {
+    "exportedAt": "2025-10-15T07:16:56.320Z",
+    "dateRange": {
+      "start": "2025-07-07",
+      "end": "2025-10-14"
+    },
+    "categories": {
+      "achievements": false,
+      "skills": true,
+      "reflections": false,
+      "valueOutputs": false
+    }
+  }
+}
