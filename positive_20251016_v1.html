@@ -4617,10 +4617,28 @@ function renderValueOutputs() {
 
          const success = mergeImportedData(importedData, '选择的文件');
          
-         if (success) {
-         closeModal('enhanced-import-modal');
-         }
-         }
+    if (success) {
+        const importStats = window.importStats || {};
+        
+        let message = '导入完成！\n\n';
+        if (importStats.achievements) {
+            message += `成就记录: 新增 ${importStats.achievements.added} 条，更新 ${importStats.achievements.updated} 条\n`;
+        }
+        if (importStats.skills) {
+            message += `技能记录: 新增 ${importStats.skills.added} 项，更新 ${importStats.skills.updated} 项\n`;
+        }
+        if (importStats.reflections) {
+            message += `反思记录: 新增 ${importStats.reflections.added} 条，更新 ${importStats.reflections.updated} 条\n`;
+        }
+        if (importStats.valueOutputs) {
+            message += `价值输出: 新增 ${importStats.valueOutputs.added} 条，更新 ${importStats.valueOutputs.updated} 条\n`;
+        }
+        
+        alert(message);
+        
+        closeModal('enhanced-import-modal');
+    }
+}
 
          function processFilesSequentially(files, index, importResults) {
              if (index >= files.length) {
@@ -4807,6 +4825,13 @@ function renderValueOutputs() {
 
          function mergeImportedData(importedData, filename = '导入文件') {
 
+    window.importStats = {
+        achievements: { added: 0, updated: 0 },
+        skills: { added: 0, updated: 0 },
+        reflections: { added: 0, updated: 0 },
+        valueOutputs: { added: 0, updated: 0 }
+    };
+
          validateAndFixImportedData(importedData);
 
          const importStats = {
@@ -4817,57 +4842,91 @@ function renderValueOutputs() {
          recordDays: importedData.recordData ? importedData.recordData.recordDays : 0
          };
 
-         if (Array.isArray(importedData.achievements)) {
-         const existingAchievementIds = new Set(appData.achievements.map(a => a.id));
-         let addedAchievements = 0;
-         
-         importedData.achievements.forEach(achievement => {
-             if (!existingAchievementIds.has(achievement.id)) {
-				 appData.achievements.push(achievement);
-                 addedAchievements++;
-             }
-         });
-         
-         console.log(`导入了 ${addedAchievements} 条新成就记录`);
-         }
+if (Array.isArray(importedData.achievements)) {
+    const existingAchievementIds = new Set(appData.achievements.map(a => a.id));
+    let addedAchievements = 0;
+    let updatedAchievements = 0;
+    
+    importedData.achievements.forEach(achievement => {
+        if (!existingAchievementIds.has(achievement.id)) {
+            appData.achievements.push(achievement);
+            addedAchievements++;
+        } else {
+            const existingAchievement = appData.achievements.find(a => a.id === achievement.id);
+            const existingLastUpdate = getLastUpdateTime(existingAchievement);
+            const importedLastUpdate = getLastUpdateTime(achievement);
+            
+            if (importedLastUpdate > existingLastUpdate) {
+                const index = appData.achievements.findIndex(a => a.id === achievement.id);
+                appData.achievements[index] = achievement;
+                updatedAchievements++;
+            }
+        }
+    });
+        window.importStats.achievements.added = addedAchievements;
+    window.importStats.achievements.updated = updatedAchievements;
+    console.log(`导入了 ${addedAchievements} 条新成就记录，更新了 ${updatedAchievements} 条现有记录`);
+}
 
 if (Array.isArray(importedData.skills)) {
     let addedSkills = 0;
-    let addedCheckins = 0;
+    let updatedSkills = 0;
+    let totalCheckinsAdded = 0;
+    let totalCheckinsUpdated = 0;
 
     importedData.skills.forEach(skill => {
-
         const existingSkillByName = appData.skills.find(s => s.name === skill.name);
         
         if (!existingSkillByName) {
-
             const existingSkillById = appData.skills.find(s => s.id === skill.id);
             if (!existingSkillById) {
                 appData.skills.push(skill);
                 addedSkills++;
+                totalCheckinsAdded += (skill.checkins ? skill.checkins.length : 0);
             } else {
-
-                mergeSkillCheckins(existingSkillById, skill);
-                addedCheckins += (skill.checkins ? skill.checkins.length : 0);
+                const checkinStats = mergeSkillCheckins(existingSkillById, skill);
+                updatedSkills++;
+                totalCheckinsAdded += checkinStats.added;
+                totalCheckinsUpdated += checkinStats.updated;
             }
         } else {
-
-            mergeSkillCheckins(existingSkillByName, skill);
-            addedCheckins += (skill.checkins ? skill.checkins.length : 0);
+            const checkinStats = mergeSkillCheckins(existingSkillByName, skill);
+            updatedSkills++;
+            totalCheckinsAdded += checkinStats.added;
+            totalCheckinsUpdated += checkinStats.updated;
         }
     });
     
-    console.log(`导入了 ${addedSkills} 项新技能，${addedCheckins} 条打卡记录`);
+    window.importStats.skills.added = addedSkills;
+    window.importStats.skills.updated = updatedSkills;
+    window.importStats.skills.checkinsAdded = totalCheckinsAdded;
+    window.importStats.skills.checkinsUpdated = totalCheckinsUpdated;
+    console.log(`导入了 ${addedSkills} 项新技能，更新了 ${updatedSkills} 项现有技能，新增 ${totalCheckinsAdded} 条打卡记录，更新 ${totalCheckinsUpdated} 条现有打卡记录`);
 }
 
 function mergeSkillCheckins(targetSkill, sourceSkill) {
-    if (!sourceSkill.checkins || !Array.isArray(sourceSkill.checkins)) return;
+    if (!sourceSkill.checkins || !Array.isArray(sourceSkill.checkins)) {
+        return { added: 0, updated: 0 };
+    }
     
     const existingCheckinIds = new Set(targetSkill.checkins.map(c => c.id));
+    let addedCheckins = 0;
+    let updatedCheckins = 0;
     
     sourceSkill.checkins.forEach(checkin => {
         if (!existingCheckinIds.has(checkin.id)) {
             targetSkill.checkins.push(checkin);
+            addedCheckins++;
+        } else {
+            const existingCheckin = targetSkill.checkins.find(c => c.id === checkin.id);
+            const existingLastUpdate = getLastUpdateTime(existingCheckin);
+            const importedLastUpdate = getLastUpdateTime(checkin);
+            
+            if (importedLastUpdate > existingLastUpdate) {
+                const index = targetSkill.checkins.findIndex(c => c.id === checkin.id);
+                targetSkill.checkins[index] = checkin;
+                updatedCheckins++;
+            }
         }
     });
 
@@ -4881,35 +4940,64 @@ function mergeSkillCheckins(targetSkill, sourceSkill) {
     if (targetSkill.progress >= 100 && targetSkill.category !== 'completed') {
         targetSkill.category = 'completed';
     }
+    
+    console.log(`合并了 ${addedCheckins} 条新打卡记录，更新了 ${updatedCheckins} 条现有记录`);
+    return { added: addedCheckins, updated: updatedCheckins };
 }   
 
-         if (Array.isArray(importedData.reflections)) {
-         const existingReflectionIds = new Set(appData.reflections.map(r => r.id));
-         let addedReflections = 0;
+if (Array.isArray(importedData.reflections)) {
+    const existingReflectionIds = new Set(appData.reflections.map(r => r.id));
+    let addedReflections = 0;
+    let updatedReflections = 0;
+    
+    importedData.reflections.forEach(reflection => {
+        if (!existingReflectionIds.has(reflection.id)) {
+            appData.reflections.push(reflection);
+            addedReflections++;
+        } else {
+            const existingReflection = appData.reflections.find(r => r.id === reflection.id);
+            const existingLastUpdate = getLastUpdateTime(existingReflection);
+            const importedLastUpdate = getLastUpdateTime(reflection);
+            
+            if (importedLastUpdate > existingLastUpdate) {
+                const index = appData.reflections.findIndex(r => r.id === reflection.id);
+                appData.reflections[index] = reflection;
+                updatedReflections++;
+            }
+        }
+    });
+    window.importStats.reflections.added = addedReflections;
+    window.importStats.reflections.updated = updatedReflections;
+    console.log(`导入了 ${addedReflections} 条新反思记录，更新了 ${updatedReflections} 条现有记录`);
+}
          
-         importedData.reflections.forEach(reflection => {
-             if (!existingReflectionIds.has(reflection.id)) {
-                 appData.reflections.push(reflection);
-                 addedReflections++;
-             }
-         });
-         
-         console.log(`导入了 ${addedReflections} 条新反思记录`);
-         }
-
-         if (Array.isArray(importedData.valueOutputs)) {
-         const existingValueOutputIds = new Set(appData.valueOutputs.map(v => v.id));
-         let addedValueOutputs = 0;
-         
-         importedData.valueOutputs.forEach(valueOutput => {
-             if (!existingValueOutputIds.has(valueOutput.id)) {
-                 appData.valueOutputs.push(valueOutput);
-                 addedValueOutputs++;
-             }
-         });
-         
-         console.log(`导入了 ${addedValueOutputs} 条新价值输出记录`);
-         }
+         // 合并价值输出数据
+if (Array.isArray(importedData.valueOutputs)) {
+    const existingValueOutputIds = new Set(appData.valueOutputs.map(v => v.id));
+    let addedValueOutputs = 0;
+    let updatedValueOutputs = 0;
+    
+    importedData.valueOutputs.forEach(valueOutput => {
+        if (!existingValueOutputIds.has(valueOutput.id)) {
+            appData.valueOutputs.push(valueOutput);
+            addedValueOutputs++;
+        } else {
+            const existingValueOutput = appData.valueOutputs.find(v => v.id === valueOutput.id);
+            const existingLastUpdate = getLastUpdateTime(existingValueOutput);
+            const importedLastUpdate = getLastUpdateTime(valueOutput);
+            
+            if (importedLastUpdate > existingLastUpdate) {
+                const index = appData.valueOutputs.findIndex(v => v.id === valueOutput.id);
+                appData.valueOutputs[index] = valueOutput;
+                updatedValueOutputs++;
+            }
+        }
+    });
+    
+    window.importStats.valueOutputs.added = addedValueOutputs;
+    window.importStats.valueOutputs.updated = updatedValueOutputs;
+    console.log(`导入了 ${addedValueOutputs} 条新价值输出记录，更新了 ${updatedValueOutputs} 条现有记录`);
+}
 
          if (importedData.recordData && Array.isArray(importedData.recordData.recordDates)) {
          const importedRecordDates = new Set(importedData.recordData.recordDates);
@@ -4957,6 +5045,21 @@ function mergeSkillCheckins(targetSkill, sourceSkill) {
          return true;
          }
 
+function getLastUpdateTime(record) {
+    if (!record) return 0;
+
+    let lastTime = record.timestamp || 0;
+    
+    if (record.modificationHistory && record.modificationHistory.length > 0) {
+        const latestModification = record.modificationHistory[record.modificationHistory.length - 1];
+        const modificationTime = fixMissingTimestamp(latestModification.date, latestModification.time);
+        if (modificationTime > lastTime) {
+            lastTime = modificationTime;
+        }
+    }
+    
+    return lastTime;
+}
          function resetData() {
          document.getElementById('reset-password').value = '';
          document.getElementById('password-error').style.display = 'none';
